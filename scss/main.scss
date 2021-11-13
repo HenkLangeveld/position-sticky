@@ -17,37 +17,38 @@ html {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(ellipse at center, #443501 0%, #000000 100%);
+  background: radial-gradient(ellipse at center, #30346e 0%, #000040 100%);
 }
 
 .wrapper {
-  display: flex;
   width: 80%;
   margin-inline: auto;
+}
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    font-size: 6vw;
+    text-align: center;
+  }
+}
+
+.sticky {
+  min-height: 100vh;
+}
+
+.columns {
+  display: flex;
 }
 
 .column {
   width: 25%;
   min-height: 100vh;
-  color: yellow;
   position: relative;
-  // background-color: blue;
-
-  // &-1 {
-  //   background-color: red;
-  // }
-
-  // &-2 {
-  //   background-color: lawngreen;
-  // }
-
-  // &-3 {
-  //   background-color: mediumblue;
-  // }
-
-  // &-4 {
-  //   background-color: palevioletred;
-  // }
 }
 
 .container {
@@ -65,19 +66,26 @@ html {
   &-5 {
     height: 500vh;
   }
+
+  &--sticky {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 p {
-  position: sticky;
-  top: 0;
+  position: relative;
   text-align: center;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25vw;
   text-transform: uppercase;
-  color: #cfc09f;
+  color: #baac8f;
   text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
     5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
 
@@ -98,7 +106,7 @@ p {
       #cfc09f 26%,
       #cfc09f 27%,
       #ffecb3 40%,
-      #3a2c0f 78%
+      #4d4126 78%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
