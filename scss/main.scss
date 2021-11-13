@@ -11,13 +11,18 @@ html {
   font-family: "Playfair Display", serif;
 }
 
-body {
+.glow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   background: radial-gradient(ellipse at center, #443501 0%, #000000 100%);
 }
 
 .wrapper {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin-inline: auto;
 }
 
@@ -70,7 +75,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18vw;
+  font-size: 25vw;
   text-transform: uppercase;
   color: #cfc09f;
   text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
