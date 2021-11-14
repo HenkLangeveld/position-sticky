@@ -88,6 +88,8 @@ p {
   color: #baac8f;
   text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
     5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: -1px 0 1px #cd9f23, 0 1px 1px #cd9f23,
+    5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
 
   &::before {
     content: attr(data-heading);
@@ -107,6 +109,14 @@ p {
       #cfc09f 27%,
       #ffecb3 40%,
       #4d4126 78%
+    );
+    background: linear-gradient(
+      #a27411 22%,
+      #a67912 24%,
+      #a77e0a 26%,
+      #fbe660 27%,
+      #feec76 45%,
+      #784800 78%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
